@@ -1,5 +1,13 @@
 ---
+import '../styles/global.css';
 
+import Footer from '../components/Footer.astro'
+
+import Header from '../components/Header.astro';
+
+
+
+const pageTitle= "Inicio"
 ---
 
 <html lang="en">
@@ -8,14 +16,21 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Inicio</a>
-        <a href="/about/">Sobre mi</a>
-        <a href="/Blog">Blog</a>
-
 		
-		<h1>Yisuss portfolio</h1>
+		<Header />
+
+
+		<h1>Yisus portfolio</h1>
+
+	
+		<Footer/>
+
+		<script>
+			import "../scripts/menu.js";
+		</script>
+
 	</body>
 </html>
